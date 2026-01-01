@@ -35,3 +35,8 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- Highlight settings for line numbers
+vim.api.nvim_set_hl(0, 'LineNr', { fg = '#00FF00' })
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#FFFF00' })
+vim.api.nvim_set_hl(0, 'Visual', { bg = '#FFFFE0', fg = '#000000' })
