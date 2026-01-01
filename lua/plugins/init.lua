@@ -12,6 +12,16 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    'folke/noice.nvim',
+    event = 'VeryLazy',
+    opts = {
+    },
+    dependencies = {
+      'MunifTanjim/nui.nvim',
+      'rcarriga/nvim-notify',
+    },
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
